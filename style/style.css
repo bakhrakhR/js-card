@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    gap: 47px;
+
+}
+
+.content {
+    margin-left: 5.5rem;
+}
+
+
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 40px;
+}
+
+.content>p {
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.8125rem;
+    margin-bottom: 129px;
+    color: #575757;
+}
+
+.content>form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #575757;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control>label {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin: 11px auto 4px 7px;
+}
+
+.form_input {
+    width: 609px;
+    height: 66px;
+    background: #EEEEEE;
+    color: #9563FF;
+    font-size: 1.4375rem;
+    padding: 21px 0 21px 22px;
+    border: none;
+    border-bottom: 1px solid #9563FF;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.form_input::placeholder {
+    color: #9563FF;
+}
+
+#cardNumber {
+    padding: 5px 5px 5px 70px;
+    background: #EEEEEE;
+    background-image: url(./image/bank.png);
+    background-repeat: no-repeat;
+    background-size: 7% 40%;
+    background-position-y: center;
+    background-position-x: 15px;
+    width: 609px;
+    height: 66px;
+    color: #9563FF;
+}
+
+.cvc>.form_input {
+    width: 283px;
+}
+
+.expiry>input {
+    width: 240px;
+}
+
+.cardData {
+    display: flex;
+    gap: 86px;
+}
+
+.discount-btn {
+    position: relative;
+}
+
+.discount-btn>input {
+    padding-right: 90px;
+}
+
+.discount-btn>input::placeholder {
+    color: #CFBBF9;
+}
+
+#apply {
+    position: absolute;
+    width: 58px;
+    height: 24px;
+    top: 0px;
+    right: 0px;
+    transform: translate(-50%, 80%);
+    background: none;
+    border: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #9563FF;
+    cursor: pointer;
+}
+
+#apply:disabled {
+    cursor: not-allowed;
+    ;
+}
+
+
+.submit-btn {
+    width: 242px;
+    height: 66px;
+    background: #9563FF;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-right: 96px;
+    min-width: 503px;
+    height: 810px;
+    background: #F0F0F0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px 0px #b7b7b7;
+    padding-left: 60px;
+    padding-right: 23px;
+    padding-top: 71px;
+    z-index: 0;
+}
+
+.card_header_header {
+    font-size: 1.5rem;
+    color: #575757;
+    margin-left: -18px;
+    margin-bottom: 17px;
+    position: relative;
+}
+
+.card_header_header::before {
+    position: absolute;
+    content: "";
+    width: 236px;
+    height: 231px;
+    border-radius: 50%;
+    background-color: #9563FF;
+    top: -30px;
+    left: 70px;
+    filter: blur(80px);
+    z-index: -1;
+}
+
+.card_header_sum {
+    font-size: 4rem;
+    color: #000;
+    margin-left: 9px;
+    margin-bottom: 86px;
+}
+
+.card_item,
+.tax_wraper,
+.total_wraper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_item_wraper {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_item_name,
+.tax,
+.total {
+    font-size: 1.625rem;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.card_item_desc {
+    font-size: 1.25rem;
+    margin-bottom: 31px;
+    color: #575757;
+}
+
+.card_item_price,
+.tax_price,
+.total_price {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+hr {
+    margin-top: 77px;
+    margin-bottom: 41px;
+    color: #747474;
+}
+
+.tax_wraper {
+    margin-bottom: 46px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.error {
+    color: red;
+    border-color: red;
+}
